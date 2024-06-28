@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.userInput:valid{
+   border-color: blueviolet;
+}
+
+.userInput:focus ~label,
+.userInput:valid ~label
+{
+   top: -1.185rem;
+   background-color: white;
+   color: blueviolet;
+   transition: 0.2s;
+   border-color: blueviolet;
+}
+
+.Inputs{
+   @apply w-full p-3 border border-black outline-none userInput focus:border-violet-500;
+}
+.user-label{
+  @apply absolute left-4 top-3 font-serif font-black 
+}
+
+.signup-btn{
+    @apply bg-violet-600 px-2 text-white py-2
+}

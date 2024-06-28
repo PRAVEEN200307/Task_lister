@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Entry App|login</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <header class="shadow-lg p-5">
+      <div class="sm:flex justify-between md:mx-36">
+        <div class="flex justify-between items-center">
+          <a href="#" class="font-bold text-2xl tracking-wide"
+            ><span class="text-violet-900">Task Entry App</span>
+          </a>
+          <button
+            id="closeBtn"
+            class="sm:hidden px-3 py-2 bg-slate-900 rounded text-white"
+          >
+            X
+          </button>
+        </div>
+        <div class="">
+          <div
+            class="flex flex-col sm:gap-7 gap-3 mt-3 sm:mt-0  sm:space-x-3 sm:block"
+            id="headerTile"
+          >
+            <a href="index.html" class="text-violet-900 font-bold">Home</a>
+            <a href="" class="text-gray-500 hover:text-violet-900">About us</a>
+            <a
+              href="login.html"
+              class="font-bold px-6 py-2 border border-black hover:bg-gray-200"
+              >Log in</a
+            >
+            <a
+              href="signup.html"
+              class="bg-black text-white px-6 py-2 hover:bg-gray-700"
+              >Sign up</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="flex justify-center mt-20">
+      <form
+        class="flex justify-center p-5 flex-col gap-3 w-96 space-y-5"
+        id="loginForm"
+      >
+        <h1 class="font-bold text-xl">Login in</h1>
+
+        <div class="relative">
+          <input type="text" name="email" id="email" class="Inputs" required />
+          <label for="email" class="user-label">Email</label>
+        </div>
+        <div class="relative">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="Inputs"
+            required
+          />
+          <label for="password" class="user-label">Password</label>
+        </div>
+        <button
+          type="submit"
+          class="signup-btn"
+        >
+          Log in
+        </button>
+        <div class="text-gray-600 text-center">
+          or
+          <a href="#" class="text-violet-950 underline font-bold"
+            >Forgot Password</a
+          >
+        </div>
+        <hr />
+        <div class="text-gray-600 text-center">
+          Dont have an account?
+          <a href="signup.html" class="text-violet-950 underline font-bold"
+            >Sign up</a
+          >
+        </div>
+      </form>
+    </main>
+  </body>
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="./assets/js/validateLogin.js"></script>
+</html>

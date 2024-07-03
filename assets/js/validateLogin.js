@@ -32,9 +32,13 @@ validate1
       return obj;
     }, {});
 
+
+
     const { email: userEmail, password } = formData;
     if (email === userEmail && password === conformPassword) {
       alert("login successfully");
       document.location.href = "./index.html";
+    }else{
+       alert("please check your email and password")
     }
   });

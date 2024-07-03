@@ -6,7 +6,8 @@ export default defineConfig({
       input: {
         main: './index.html',
         login: './login.html',
-        singup:'./signup.html'
+        singup:'./signup.html',
+        contributer:'./contributers.html'
       }
     }
   }

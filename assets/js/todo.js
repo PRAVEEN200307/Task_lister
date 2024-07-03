@@ -1,4 +1,5 @@
 // get the data form the localStoarge
+const length = document.querySelector('#length');
 
 document.addEventListener("DOMContentLoaded", () => {
   // Added the data
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function getloadTaskData() {
     renderedArea.innerHTML = "";
     const taskInfo = JSON.parse(localStorage.getItem("task")) || [];
+    length.innerHTML = taskInfo.length
     taskInfo.map((task, index) => {
       const div = document.createElement("div");
       div.classList = "bg-slate-200 p-3 rounded flex justify-between";
